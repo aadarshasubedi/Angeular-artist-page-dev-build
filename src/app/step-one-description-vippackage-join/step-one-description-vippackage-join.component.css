@@ -1,0 +1,16 @@
+.InnerDescriptionTextClass {
+    width: 40%;
+    display: table-cell;
+}
+
+.LeftImageDesc{
+background: url("https://wr1test.imgix.net/merchPackageImages/Benjamin-Merchandise.png");
+height: 25vw;
+display: table-cell;
+width: 25vw;
+margin-right: 0px;
+margin-left: 10px;
+background-repeat: no-repeat;
+background-size: 25vw;
+    /* https://wr1test.imgix.net/merchPackageImages/Benjamin-Merchandise.png */
+}

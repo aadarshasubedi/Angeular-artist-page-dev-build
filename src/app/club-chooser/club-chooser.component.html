@@ -1,0 +1,28 @@
+<div class="WidgetClassCSS">
+<h3 class="ClubChooserTitleClass">
+Choose a club widget
+</h3>
+<!--
+<div *ngFor="let clubid of listOfChosenClubIds; let i = index">
+{{clubid}}
+</div>
+
+-->
+
+
+<form>
+<div class="ClubChooseInputClass">
+[DefaultChosenClub]={{clubID}}
+  <input type ='text' list="clubs" [value]="clubIDInput" (input)="clubIDInput = $event.target.value"  placeholder="Please enter a club ID"/>
+<span> <br>You have chosen club {{clubIDInput}} <br> Please wait while loading...</span>
+</div>
+<a class="goToClubButtonClass" type="submit" rel="noopener" (click)="DirectTOClub()">Go to this club</a>
+</form>
+
+</div>
+
+
+
+
+
+

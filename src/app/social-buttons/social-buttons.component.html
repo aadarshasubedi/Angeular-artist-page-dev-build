@@ -1,0 +1,45 @@
+<div class="SocialButtonsWrapperClass">
+  <div class="socialButtonss">
+<ul class="SocialIconListClas" id="navlist">
+      <div *ngFor="let socialButton of socialButtons; let index=index; let odd=odd; let even=even;" class="NGRepeat" >
+<div *ngIf="socialButton.iconText == ''">
+ <li class="SocialButtonsLI">
+          <a href="{{socialButton.socialURL}}" title="Check out {{socialButton.artistName}}'s {{socialButton.socialType}} page!" target="_blank" rel="noopener">
+        <div class="socialButtonWrapper">   
+     
+          <div class="SocialButtonClass">
+<i class="{{socialButton.FAiconClass}}" aria-hidden="true"></i>
+
+
+            </div>
+</div>
+   </a>
+  </li>
+  </div>
+  <div *ngIf="socialButton.iconText == 'follow'">
+       <li class="SocialButtonsLI">
+          <a href="{{socialButton.socialURL}}" class ="PurpleFolowTrue" title="Check out {{socialButton.artistName}}'s {{socialButton.socialType}} page!" target="_blank" rel="noopener">
+        <div class="socialButtonWrapper">   
+         <div class="SocialButtonClassWithFollow">
+          <div class="SocialButtonClass">
+<i class="{{socialButton.FAiconClass}}" aria-hidden="true"></i>
+<div class="followTextClass">
+{{socialButton.iconText}}
+  </div>
+
+ </div>
+ </div>
+</div>
+   </a>
+  </li>
+</div>
+</div>
+  </ul>
+
+
+
+
+  </div>
+</div>
+
+

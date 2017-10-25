@@ -1,0 +1,67 @@
+.SubExplanationTitle{
+    font-size: 10px;
+}
+
+.InnerSUbWidgetWrapper{
+    overflow: scroll;
+    height: 100vh;
+   font-size: 15px;
+}
+
+.PropertyHeaderTitle {
+    color: #ff0770;
+    padding-top: 5%;
+    font-size: 23px;
+    font-family: font92825;
+    padding-bottom: 5%;
+    transition: all 0.3s,  dbackground 0.3s;
+}
+
+.PropertyHeaderTitle:active{
+color: #ffffff;
+background: #ff0770;
+transition: all 0.3s;
+padding-top: 10%;
+padding-bottom: 1%;
+font-size: 30px;
+transition: all 0.3s, background 0.3s;
+
+}
+
+.TextInnerTitleToolboxCMSArtist{
+    font-size: 12px;
+}
+
+
+.InnerArtistCMSFunctions{
+
+    overflow: scroll;
+    height: 90vh;
+}
+.PropertyHeaderTitle:hover{
+    color: #ff0770;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+    transition: all 0.3s, background 0.3s;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    
+    }
+    
+
+.HeaderSubProperty {
+background: rgba(255,255,255,0.3);
+color: #ffffff;
+height: 100%;
+
+}
+
+.PropertyExplenation{
+    font-size: 10px;
+}

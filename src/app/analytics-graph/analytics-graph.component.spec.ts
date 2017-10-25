@@ -1,0 +1,25 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AnalyticsGraphComponent } from './analytics-graph.component';
+
+describe('AnalyticsGraphComponent', () => {
+  let component: AnalyticsGraphComponent;
+  let fixture: ComponentFixture<AnalyticsGraphComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ AnalyticsGraphComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AnalyticsGraphComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should be created', () => {
+    expect(component).toBeTruthy();
+  });
+});

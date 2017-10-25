@@ -1,0 +1,215 @@
+/*
+
+.row.odd {
+    background: lightgray;
+ 
+}
+
+table td{
+     white-space:nowrap;
+}
+
+
+.row {
+    display: inline-block;
+    min-height: 25vh;
+    max-width: 25vw;
+    max-height: 25vh;
+    min-width: 25vw;
+    width: 25vw;
+    height: 25vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+.SocialPostSingleCardWrapper {
+    font-size: 1rem;
+   display: inline-block;
+    text-align: center;
+    padding: 3px;
+    table-layout: auto !important;
+    margin: 1px;
+    
+}
+.socialPostsWrapper {
+    display: inline-block;
+}
+
+.divTable{
+	 display: inline-block;
+	width: auto !important;
+}
+.divTableRow {
+    display: block;
+   
+  
+}
+.divTableHeading {
+	background-color: #EEE;
+ display: inline-block;
+}
+.socialPostsWrapper, .divTableHead {
+
+	 display: inline-block;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+ display: inline-block;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+ display: inline-block;
+	font-weight: bold;
+}
+.divTableBody {
+	 display: inline-block;
+}
+
+//List
+ul.ulListClass {
+
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+
+      display: inline-block;
+}
+*/
+.divTable.socialTableWrapper{
+width: 100%;
+
+ 
+bottom:0;
+}
+
+ul#SocialRowOne {
+    margin-bottom: 0px!important;
+    padding-left: 0px;
+}
+
+ul#SocialRowTwo {
+    margin-bottom: 0px!important;
+       padding-left: 0px;
+}
+
+
+li.LiClassList {
+    display: inline-flex;
+}
+
+ul.ulListClass {
+    display: inline-flex;
+}
+
+
+.socialPostsWrapper {
+  transition: all 0.5s;
+}
+
+
+.SocialPageInnerContainer{
+
+    position: relative;
+}
+.PosterNameClass {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: color 0.5s;
+     font-size: 1.1vw;
+     transition: font-size 0.5s;
+}
+
+.SocialPostSingleCardWrapper {
+    width: 25vw;
+    height: 200px;
+
+}
+
+.PosterNameClass:hover {
+    color: #ff0770;
+    font-weight: bolder;
+    text-decoration: none;
+       transition: color 0.4s;
+          font-size: 1.5vw;
+               transition: font-size 0.5s;
+
+}
+
+.posterNameURLCLass {
+    transform: translateZ(20px);
+    text-decoration: none;
+}
+
+.HowManyDaysAgoTweeted {
+
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+.MidDotClass{
+    padding: 1px;
+    vertical-align: text-top;
+}
+
+.SocialPostSingleCardWrapper {
+    padding: 30px;
+}
+.row1:hover{
+
+  z-index: 99999999999999999;
+  transition: all 0.3s;
+  font-size:2vw;
+
+}
+.SocialPostSingleCardWrapper:hover{
+    overflow: scroll;
+    height: 200px;
+    
+    transition: all 0.5s;
+      font-size: 1.5vw;
+      z-index: 99999999999999;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 7px;
+      padding: 10px;
+      margin-top: 0px;
+      background: rgba(255, 7, 112, 0.5);
+}
+
+@media screen and (max-width: 680px) {
+.divTableRow{
+font-size: 60%;
+overflow: scroll;
+}
+
+.SocialPostSingleCardWrapper{
+    overflow: scroll;
+    height: 25vh;
+    transition: all 0.5s;
+          padding: 7px;
+          transform-style: preserve-3d;
+
+}
+
+.SocialPostSingleCardWrapper:hover{
+    overflow: scroll;
+    height: 30vh;
+    width: 30vw;
+    transition: all 0.5s;
+      font-size: 3vw;
+      z-index: 99999999999999;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 7px;
+      padding: 10px;
+      margin-top: 0px;
+      background: rgba(255, 7, 112, 0.5);
+  
+}
+
+
+}

@@ -1,0 +1,111 @@
+.BackToStepOneButton {
+    background: rgba(255, 7, 112, 0.8);
+       padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 10vw;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+
+
+
+.BackToStepOneButton:hover {
+    background: rgba(255, 7, 112, 0.7);
+    padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 10vw;
+    box-shadow: 0 0 5px 4px white;
+    text-align: center;
+    border: solid white 3px;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+}
+
+
+.BackToStepOneButton:active {
+    background: rgba(255, 7, 112, 0.8);
+       padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 10vw;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 680px) {
+
+.BackToStepOneButton {
+    background: rgba(255, 7, 112, 0.8);
+       padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 40vw;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+
+
+
+.BackToStepOneButton:hover {
+    background: rgba(255, 7, 112, 0.7);
+    padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 40vw;
+    box-shadow: 0 0 5px 4px white;
+    text-align: center;
+    border: solid white 3px;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+}
+
+
+.BackToStepOneButton:active {
+    background: rgba(255, 7, 112, 0.8);
+       padding-left: 1vw;
+        padding-right: 1vw;
+         padding-top: 3px;
+          padding-bottom: 3px;
+    max-height: 20vh;
+    max-width: 40vw;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+}

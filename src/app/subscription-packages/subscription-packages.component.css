@@ -1,0 +1,255 @@
+th.AvatarIconVIPPackage {
+    max-height: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: static;
+    margin-top: 7px;
+    margin-right: 0px;
+    margin-left: 1%;
+    background-repeat: no-repeat;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: 200%;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+
+.InnerDescriptionClass {
+    display: block;
+    margin-right: auto;
+}
+
+.PackageWrapper {
+    display: table-cell;
+    width: 48vw;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    border: solid rgba(225,225,225,0.9);
+    margin-right: 0px;
+    margin-left: auto;
+      min-height: 5vh;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+th.getPackageURLWrapper {
+    padding-left: 20px;
+}
+
+.ChooseAPackageClass {
+    color: #ff0770;
+}
+.PackageURL {
+
+    color: #ff0770;
+    transition: all 0.5s;
+}
+
+
+.PackagerowClass:visited {
+    background: rgba(255, 7, 112, 0.3);
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.PackageURL:hover {
+
+    color: #ffffff;
+}
+th.AvatarIconVIPPackage:hover {
+    max-height: 150px;
+    max-width: 150px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+        transition: all 0.5s;
+
+}
+
+
+
+.ArtistAvatarDiv:hover{
+ max-height: 150px!important;
+    max-width: 150px!important;
+    height: 150px!important;
+    width: 150px!important;
+    border-radius: 100px!important;
+        transition: all 0.5s!important;
+
+}
+
+.PackageDesciptionDetails {
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.PackageDesciptionDetails:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.ArtistAvatarDiv{
+
+ max-height: 50px!important;
+    max-width: 50px!important;
+    height: 50px!important;
+    width: 50px!important;
+    border-radius: 50px!important;
+    position: static!important;
+    margin-top: 7px!important;
+    margin-right: 0px!important;
+    margin-left: 1%!important;
+    background-repeat: no-repeat!important;
+    display: block!important;
+    -o-object-fit: cover!important;
+    object-fit: cover!important;
+    background-size: 100%!important;
+    background-position: center!important;
+    transition: all 0.5s!important;
+}
+
+.ScrollMorePackages {
+    overflow: scroll;
+    height: 100%;
+    max-height: 40vh;
+}
+.PackagerowClass:hover {
+    background: rgba(255, 7, 112, 0.3);
+    width: 100%;
+    padding: 3px;
+        border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.PackagerowClass:active {
+    background: rgba(255, 7, 112, 0.7);
+    width: 100%;
+    padding: 20px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.PackagerowClass {
+  
+    width: 100%;
+        border-radius: 5px;
+transition: all 0.3s;
+}
+.InnerDescriptionTextClass {
+    width: 40%;
+    display: table-cell;
+}
+
+
+.LeftImageDesc{
+background: url("https://wr1test.imgix.net/merchPackageImages/Benjamin-Merchandise.png");
+height: 25vw;
+display: table-cell;
+width: 25vw;
+margin-right: 0px;
+margin-left: 10px;
+background-repeat: no-repeat;
+background-size: 25vw;
+    /* https://wr1test.imgix.net/merchPackageImages/Benjamin-Merchandise.png */
+}
+.TotalSubscriptionBlockWrapper {
+    display: table-row;
+}
+
+div#DesicriptionCHangeID {
+    display: table-cell;
+    height: 90vh;
+    width: 50vw;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 3px;
+    border: solid rgba(225,225,225,0.9);
+    color: black;
+    margin-left: auto;
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow: scroll;
+}
+
+
+.TotalTopOutrWrapper {
+    width: 100vw;
+    height: 90vh;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 680px) {
+.ScrollMorePackages {
+    overflow: scroll;
+    height: 80vh;
+    max-height: 80vh;
+    width: 60vw;
+    margin: 2px;
+}
+
+
+
+div#DesicriptionCHangeID {
+    display: table-cell;
+    width: 30vw;
+    height: 80vh;
+    padding: 5px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    border: solid rgba(225,225,225,0.9);
+    color: black;
+    margin-left: 0px;
+    min-height: 10vh;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.PackageDesciptionDetails {
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+
+ul.InputSignupTableClassUL[_ngcontent-c42] {
+    color: #ff0770;
+    width: 27vw;
+}
+
+.PackageWrapper {
+    display: table-cell;
+    width: 40vw;
+    padding: 0px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    border: solid rgba(225,225,225,0.9);
+    margin-right: 0px;
+    margin-left: auto;
+      min-height: 5vh;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+
+p.ChooseAPackageClass {
+    display: none;
+}
+
+
+th.getPackageURLWrapper {
+    padding-left: 3px;
+    font-size: 10px;
+}
+}

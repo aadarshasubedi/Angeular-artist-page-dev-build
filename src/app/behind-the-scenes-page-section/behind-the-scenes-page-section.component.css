@@ -1,0 +1,71 @@
+
+.BehindAccessVIPButtonClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 30px;
+}
+
+
+app-get-vip-button {
+    display: inline-flex;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+.pageWrapperBHTS {
+background: URL("https://wr1test.imgix.net/webassets/concertcopy.png");
+    height: 100vh;
+    display: block;
+ 
+}
+
+.contentWrapperSection {
+    max-width: 98vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.PageTitleClass {
+    padding-top: 0px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 4vw;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h1#BHTSPageWrapperIDText{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btcContentWrapper {
+    padding-top: 1vh;
+    box-shadow: 0px -5px 30px 0px rgba(0,0,0,0.3);
+    height: 100vh;
+}
+
+
+@media (max-width: 680px){
+h1.PageTitleClass {
+    padding-top: 0px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 5vw;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+}

@@ -1,0 +1,69 @@
+app-follow-on-social-section-page {
+    display: flex;
+
+    height: 100vh;
+    max-height: 100vh;
+    margin-top: 5ch;
+}
+
+h1.PageTitleClass {
+    padding-top: 0px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 35vw;
+    margin-right: auto;
+}
+
+.TitleFollowPageWrapper {
+    display: flex;
+}
+
+
+app-social-buttons {
+    width: 265px;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+h1#FollowOnSocialTitle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.CompleteFollowPageTitleWrapperWButtons {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+}
+
+
+@media (max-width: 680px){
+h1.PageTitleClass {
+    padding-top: 0px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 5vw;
+    display: block;
+    display: block;
+    height: 10vh;
+    
+    display: flex;
+      margin-left: 26vw;
+    margin-right: auto;
+}
+
+h1#FollowOnSocialTitle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+}
+
+

@@ -1,0 +1,41 @@
+<div class="ArtistCMSSubWidgetOuterWrapper">
+<div class="ArtistCMSubWidgetInnerWrapper">
+<div class="ArtistCMSTitle">
+Select an object in the site to begin!
+<div class="SubExplanationTitle">
+(For a better experience please use this feature on the desktop).
+</div>
+<div class="InnerSUbWidgetWrapper">
+<!-- insert widget properties here -->
+<div class="InnerArtistCMSFunctions">
+        <div *ngFor="let property of clubStyleProperties" i = index  (click)="setProperty(i)"  >
+          <div class="PropertyHeaderTitle" (click)="OpenSubMenue()">Modify {{property.propertyName}} </div>
+     
+          <div class="HeaderSubProperty" [hidden]="HideTheSubmenu">
+            Choose a {{property.propertyName}} .
+
+            <div class="PropertyExplenation" >( {{property.propertyName}} properts go here)</div>
+        </div>
+        <hr>
+     
+</div>
+<!-- elelment toolbox -->
+<div class="ElementToolboxOuterWrapperClass">
+    <fieldset style="border: 0.2px white solid">
+    
+    <legend style="border: 0.2px white solid;margin-left: 1em; padding: 0.2em 0.8em ">Toolbox</legend>
+    
+<div class="TextInnerTitleToolboxCMSArtist" >Drag and drop elemnts will be here. </div>
+<div *ngFor="let element of elementBox">
+    <i class="{{element.FAitemIcon}}" aria-hidden="true"></i>    
+  {{element.elementName}}
+  
+</div>
+    </fieldset>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>

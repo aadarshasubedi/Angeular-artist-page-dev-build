@@ -1,0 +1,27 @@
+.LogoClass {
+    
+    width: 160px;
+    height: 16px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 160px 160px;
+    display: block;
+    margin: 10px;
+        z-index: 999999999999999999999999;
+}
+
+.at-hide{
+
+    display: none;
+}
+
+.LogoText{
+    color: #FFFFFF;
+    font-size: 100%;
+    font-weight: bolder;
+        background-size: 100%;
+       
+    z-index: 15;
+            background-repeat: no-repeat;
+}
+

@@ -1,0 +1,37 @@
+<!-- Bubble UI Developed and designed by Avi Tannenbaum For WR1 -->
+
+<!-- Bubble UI: All buubles are implemented here -->
+<!-- Outer Div -->
+<div class="BubbleUIClassWrapper" id="BubbleMenueIDForToggle" [hidden]="true">
+<!-- Inner Div -->
+  <div class="InnerBubbleUIClass">
+    <!-- Start generating the bubbles in bubble UI -->
+<div id="StateOneOpen">
+    <div *ngFor="let bubble of bubbles">
+      <div class="SingleBubbleClass">
+        <!-- Start generating the inner bubbles -->
+        <div class="{{bubble.WebLeadToURL}}class"> 
+          {{bubble.bubbleTag}}
+          </div>
+      </div>
+      </div>
+</div>
+
+
+<!-- second bubble ui closed state -->
+
+<div id="StateTwoClosed" [hidden]="true">
+    <div *ngFor="let bubble of bubbles">
+      <div class="SingleBubbleClass">
+        <!-- Start generating the inner bubbles -->
+        <div class="{{bubble.WebLeadToURL}}class"> 
+          {{bubble.bubbleTag}}
+          </div>
+      </div>
+      </div>
+</div>
+
+
+  </div>
+
+</div>

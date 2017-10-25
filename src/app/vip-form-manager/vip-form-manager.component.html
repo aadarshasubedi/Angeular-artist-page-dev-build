@@ -1,0 +1,61 @@
+<!-- Insert inenr form components here -->
+
+
+<!-- test ellments 
+Firt step 
+<app-choose-avip-package></app-choose-avip-package>
+
+
+ second step
+
+<app-chosen-package-stripe-signup [hidden]="false"></app-chosen-package-stripe-signup>
+
+ -->
+<!--
+ <form-wizard>
+        <wizard-step [title]="'Get VIP Access'" [isValid]="packageChooserForm.form.valid" (onNext)="onStep1Next($event)">
+            <h1 class="TitleH1"> Get VIP Access </h1>
+                <form #packageChooserForm="ngForm">
+                    <div class="form-group">
+                        <app-choose-avip-package></app-choose-avip-package>
+
+                        
+                    </div>
+                </form>
+        </wizard-step>
+
+        <wizard-step [title]="'Join The VIP Fan Club'" (onNext)="onStep2Next($event)">
+                        <h1 class="TitleH1"> VIP Fan Club </h1>
+                        <app-chosen-package-stripe-signup [hidden]="false"></app-chosen-package-stripe-signup>
+        </wizard-step>
+<wizard-step [title]="'Complete'" (onComplete)="onComplete($event)">
+    <div [ngSwitch]="isCompleted">
+      <div *ngSwitchDefault>
+        <h1 class="WelcomeHeaderTitle">Welcome to WR1!</h1>
+      </div>
+      <div *ngSwitchCase="true">
+        <h4>Thank you! You have completed all the steps. Please check your email for further steps</h4>
+      </div>
+    </div>
+  </wizard-step>
+</form-wizard>
+
+-->
+<!-- Step One -->
+
+ <!-- <h1 class="TitleH1"> Get VIP Access </h1> -->
+              
+ <app-choose-avip-package></app-choose-avip-package>
+
+
+ <!-- Step two  /  payment -->
+
+<app-chosen-package-stripe-signup [hidden]="Step2Payment"></app-chosen-package-stripe-signup>
+
+ <!-- step two commplete -->
+<app-chosen-package-success-signup-form [hidden]="Step3Success"></app-chosen-package-success-signup-form>
+
+
+                        
+            
+                

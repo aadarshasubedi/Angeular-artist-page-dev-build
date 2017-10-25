@@ -1,0 +1,43 @@
+.messageScrollClass {
+
+    list-style: none;
+}
+/* Fo rthe edit button */
+button.MessageModButton {
+    background: #ff0770;
+    border-radius: 50px;
+    border: solid white 3px;
+    transition: color 0.6s;
+    transition: border 0.5s;
+}
+
+button.MessageModButton:hover  {
+    background: #ffffff;
+    border-radius: 50px;
+    border: solid #ff0770 3px;
+    color: #ff0770;
+    transition: color 0.6s;
+        transition: border 0.3s;
+    
+
+}
+
+button.MessageModButton:hover > i#EditPencilButton {
+    color: #ff0770;
+}
+
+button.AddButton {
+    background: #ff0770;
+    border: solid white 2px;
+    margin: 4px;
+    border-radius: 50px;
+    padding: 13px;
+}
+input.ng-untouched.ng-pristine.ng-valid {
+    color: #ff0770;
+    border-radius: 30px;
+    border-color: white;
+    border: solid;
+    padding: 5px;
+    border-style: ridge;
+}

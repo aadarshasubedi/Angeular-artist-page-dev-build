@@ -1,0 +1,60 @@
+
+<div class="WhatsGoingOnContentClass" >
+
+    <!--
+<div *ngFor="let goingOnNowContent of goingOnNowContents; let i=index" class="NGForClass">
+<div class="ContentImageClassWGO">
+    <div *ngIf="i>0 && i<=4" class="NGIfClass">
+ <div class="LatestInnerWrapperDiscoverClass">
+<img class="clubLatestImage" parallax speed="1" src="{{goingOnNowContent.owner.avatarUrl}}"/>
+</div>
+</div>
+ </div>
+ </div>
+
+ -->
+
+
+     <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)" id="BHTCContentPageParalaxIDDisabled">
+        <div ngxSlickItem *ngFor="let slide of Testvideos; let i=index" class="slide">
+        <div *ngIf="i>-1" class="NGIfClass">
+            <div class="ContentImageClassWGO" >
+              
+               <!--     <div *ngIf="i>5 && i<=20" class="NGIfClass"> -->
+
+                <!-- check that the item is type of image 
+                {{slide.type}} 
+                {{slide.permission}} -->
+                <div *ngIf="mediaTypeHandler(slide.type)">
+
+                  <div class="UnlessHoverHideClassWrapper" (mousedown)="hideLabel()" (mouseup)="mouseHasLeftTheBuilding()" >
+                  <div (dblclick)="doubleCLickedSoShowTheVIPModule()"  class="clubLatestImage">
+             <div class="LatestInnerWrapperDiscoverClass">
+
+              <!-- check if is vip content -->
+                <div *ngIf="isPayed(slide.permission);else free_content" [hidden]="HideThisOnCLicktwo">
+                    <div class="PayedCOntentWrapper">
+                    <!-- <app-lock-content-butontto-vip></app-lock-content-butontto-vip>              -->
+              <img src="{{ slide.url }}" alt="" class="PayedclubLatestImage">
+                    </div>
+            </div>
+
+            <ng-template #free_content>      
+                        <img src="{{ slide.url }}" alt="" class="clubLatestImage">
+            </ng-template>
+            
+    
+                        
+   
+
+              </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+     
+    </ngx-slick>
+ </div>

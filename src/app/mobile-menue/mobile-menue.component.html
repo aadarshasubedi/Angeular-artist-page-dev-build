@@ -1,0 +1,24 @@
+<div class="MenuClassMobileHamburgerReady" >
+
+  <app-login></app-login>
+    <app-register></app-register>
+    <app-register-success></app-register-success>
+    <app-signup></app-signup>
+    
+  <ul class="MenuItemUL">
+    <div class="CloseMenueLi">
+    <li class="MenuItemLIClose" (click)="CloseMenu()" [hidden]="MenueTitle">Menu</li>
+        <li class="MenuItemLIClose" (click)="CloseMenu()" [hidden]="MenueTitleClose">Close</li>
+     </div>      
+    <li class="MenuItemLI" [hidden]="MenuClose">
+ <div *ngFor="let menuItem of menuItems" class="MenuListItemCLassNGForCLass">
+      <a href="{{menuItem.URL}}" class="MenuLoginURL" id="MenuURLID" rel="noopener" (click)="CloseMenu()">{{menuItem.title}}</a>
+  </div>
+     <a href="#login" class="MenuLoginURL" (click)="openLogin()" rel="noopener">Login</a>
+    </li>
+  </ul>
+  <div class="RestOfPageCLose" (click)="CloseMenu()" [hidden]="MenueTitleClose">
+    </div>
+</div>
+
+

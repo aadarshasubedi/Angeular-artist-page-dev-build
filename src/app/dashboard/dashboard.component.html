@@ -1,0 +1,57 @@
+<div class="DahsboardWrapper" [hidden]="OpenSubWidget">
+
+<!-- DashBoard Ges here -->
+
+<!-- widget elements go here -->
+<div class="DashoardHeaderClass" id="dashboard">
+Welcome {{name}} to WR1 Dashboard!
+
+<app-profile></app-profile>
+<div class="WidgetAreaWrapper">
+<div class="widgets" *ngFor="let widget of widgets" [ngSwitch]="widget.widgetcode">
+
+
+<!-- ngswitch -->
+
+<!--setup the dashboard widgets with permission -->
+<div *ngSwitchCase="'analyitics'" class="AnalyticsWidgetCaseTrue">
+<app-analytics-widget></app-analytics-widget>
+    </div>
+<div *ngSwitchCase="'clubChoose'" class="ClubChooserWidgetCaseTrue">
+<app-club-chooser></app-club-chooser>
+    </div>
+<div *ngSwitchCase="'userAccount'" class="userAccountWidgetCaseTrue">
+<app-account-widget></app-account-widget>
+    </div>
+<div *ngSwitchCase="'pageEdit'" class="pageEditWidgetCaseTrue">
+    <div class="clickToGetToSubCMSWidget" (click)="openPageEditConsole()">
+<app-edit-page-widget></app-edit-page-widget>
+</div>
+    </div>
+
+ <!-- {{widget.widgetcode}}  Not working atm..-->
+<!-- this is displayng just plain text -->
+</div>
+
+<!-- This is working --> 
+
+
+
+</div>
+</div>
+</div> <!-- this is the main inner dashboard clsing div -->
+
+
+
+<!-- Sub Widgets -->
+<!-- Load some sub menue widgets and functionality -->
+<!-- Artist CMS -->
+<div class="SubwidgetWrapper" [hidden]="!OpenSubWidget">
+        <p> Artist CMS </p>
+<div class="ArtistCMSWrapper">
+<div class="ArtistCMSWidgetClick">
+<div class="BackButtonClass" (click)="GoBack()">Back</div>        
+<app-cms-page-editor-artist></app-cms-page-editor-artist>
+</div>
+</div>
+</div>

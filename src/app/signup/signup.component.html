@@ -1,0 +1,41 @@
+
+<div id="signin" class="modalDialog">
+    <a (click)="goBack()" title="Close" class="close"></a>
+
+    <div>	
+        <!-- Logo Over here -->
+<div class="wr1Logo" id="signInLogo">
+</div>
+        	<div class="SignInHeaderTitle">Sign up / Sign in</div>
+
+<div ng-show="error" class="alert alert-danger">{{error}}</div>
+
+        <form name="form" action="#signIn.php" method="get" id="signInForm">
+
+            <input form="signInForm" class="ModalFormInput" id="Username" name="usernameValue" type="text" placeholder="Username / Email">
+            <br>
+            <input form="signInForm" class="ModalFormInput" id="Password" name="paswordValue" type="password" placeholder="Enter your password">
+            <br>
+
+            <div class="signInClass"> 
+
+            <button type="submit" form="signInForm" value="Submit" class="submitSignInButton" id="SignInSubmitButton"><div class="ButtonText" id="ButtonTextSignInID">Sign In</div></button>
+
+                </div>
+                     </form>
+
+<div class="SignInWithSocialSignInClassWrapper">
+            <div type="submit" form="signInForm" value="Submit" class="submitButton" id="signInSubmitButtonFB"><div class="FacebookLogo"></div><div class="ButtonText" id="ButtonSignInwithFBID">Sign In with Facebook</div></div>
+
+
+
+
+    </div>
+<div class="SignUpWrapperClass">
+
+</div>
+<div class="forgotPasswordDivClass"><a href="#forgotPassword" class="ForgotPasswordURLLink" rel="noopener">Forgot your Password?</a></div>
+            <p class="HintTextCalss">Click anywhere to close </p>
+
+ </div>
+</div>

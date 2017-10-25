@@ -1,0 +1,63 @@
+
+<div class="TotalTopOutrWrapper">
+<div class="TotalSubscriptionBlockWrapper">
+
+  <!-- Description -->
+<div class="DescriptionWrapper">
+<!--
+<div class="Packagedescriptiontitle"> Package Description </div>
+
+-->
+<div class="InnerDescriptionClass">
+
+  <div id="DesicriptionCHangeID" class="CompleteDescriptionWrapperWithImageandText" >
+        <app-package-description-block [hidden]="HideDescriptionStep2"></app-package-description-block>
+        <app-step-one-description-vippackage-join [hidden]="HideStepOne"></app-step-one-description-vippackage-join>
+
+</div>
+<div class="PackageWrapper">
+ <p class="ChooseAPackageClass"> Choose a package to join: </p>
+
+<div class="ScrollMorePackages">
+
+  <div *ngFor="let package of packages; let i = index" (click)="showDescription(i, 'package.packageDescription')">
+<div >
+  <div class="DescriptionIDClass" [hidden]="true">
+  {{package.packageID}}
+  </div>
+    <a href="#vip" class="PackageURL" rel="noopener"> <!-- Append datata packageIDChosen={{package.packageID}} -->
+
+<div class="PackagerowClass" title="{{package.longDescription}}">
+
+<table style="width:100%">
+  <tr>
+
+
+    <th class="getPackageURLWrapper">Get the {{package.packageType}} package</th>
+    <th class="PackageDesciptionDetails">
+{{package.packageDescription}}
+    </th>
+    <th>{{package.packagePrice}}</th> 
+    <div class="BackgroundWrapper">
+      <!--     <th class="AvatarIconVIPPackage" [ngStyle]="{'background-image': 'url(' + package.clubImageURL + ')'}"><app-avatar></app-avatar></th>
+ -->
+    <th class="AvatarIconVIPPackage" ><app-small-avatar></app-small-avatar></th>
+    
+    </div>
+
+    
+  
+  </tr>
+  
+</table>
+
+</div>
+ </a>
+</div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+

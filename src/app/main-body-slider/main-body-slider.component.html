@@ -1,0 +1,25 @@
+<!--
+ <div parallax speed="0.5"  id="BACKGROUNDArtist" class="bodyClass clubMainBackground" [ngStyle]="{'background-image': 'url(' + WallDatabackground + ')'}" ></div> 
+
+ <div class="ImageSlider" *ngFor="let BGImage of MoreSliders" [hidden]="ShowMoreImageSliders">
+
+{{BGImage.imageTitle}}
+ <div parallax speed="0.5" class="bodyClass clubMainBackground" [ngStyle]="{'background-image': 'url(' + BGImage.ImageURL + ')'}" ></div> 
+
+
+</div>
+
+-->
+<div id="bg">
+      <div class="wraperformainBodySLider"  id="BACKGROUNDArtist">
+
+
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)" width="100vw">
+        <div ngxSlickItem *ngFor="let slide of MoreSliders" class="slide" width="100vw">
+             <img src="{{ slide.ImageURL }}" alt="" class="MainSliderBody" id="BACKGROUNDArtist" width="100%">
+              </div>
+   
+    </ngx-slick>
+         </div>
+
+         </div>

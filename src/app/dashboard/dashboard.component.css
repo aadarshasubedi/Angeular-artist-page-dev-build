@@ -1,0 +1,42 @@
+.WidgetAreaWrapper {
+    height: 100vh;
+}
+/*Incharge of teh dashboard css */
+/* Strech the sub widget click button to full widhet height */
+
+.clickToGetToSubCMSWidget{
+    
+    height: 100%;
+}
+
+
+.BackButtonClass {
+    background: rgba(255,255,255,0.8);
+    border: solid white 2px;
+    border-radius: 2px;
+    width: 100%;
+    color: #ff0770;
+    margin-bottom: auto;
+    padding: 4px;
+    margin-right: 3%;
+    text-align: center;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+
+.BackButtonClass:hover {
+    background: rgba(255, 7, 112,0.3);
+    border: solid rgba(255, 7, 112,0.9) 2px;
+    border-radius: 2px;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: auto;
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    transition: all 0.3s;
+}

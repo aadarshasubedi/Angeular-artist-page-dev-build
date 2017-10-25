@@ -1,0 +1,149 @@
+.modalAccountDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.2);
+	z-index: 99999;
+	opacity:0;
+	-moz-transition: opacity 0.4s ease-in;
+	transition: opacity 0.4s ease-in;
+	pointer-events: none;
+
+   
+}
+
+p.ManageStripeButtonTextP {
+    background: rgba(255, 7, 112, 0.8);
+	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    max-width: 200px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 18px;
+	text-decoration: none;
+		transition: background 0.3s, border 0.3s, padding 0.3s, padding-right 0.3s, padding-right 0.3s ;
+}
+
+p.ManageStripeButtonTextP:hover {
+    background: rgba(255, 7, 112, 0.3);
+	padding-left: 25px;
+	padding-right: 25px;
+padding: 20px;
+    max-width: 200px;
+    text-align: center;
+	display: block;
+	border: solid #ffffff 2px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 18px;
+	text-decoration: none;
+	transition: all 0.3;
+		transition: background 0.3s, border 0.3s, padding 0.3s, padding-right 0.3s, padding-right 0.3s ;
+
+}
+
+
+
+
+.animated.bounceIn {
+    border: solid rgba(255, 7, 112, 0.2) 1px;
+    box-shadow: rgb(142, 142, 142) 0 0 20px 0px;
+    
+}
+
+.HintTextCalss {
+
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    transition: color 1s;
+}
+.HintTextCalss:hover {
+
+    color: lightgray;
+}
+
+.closeAcc {
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #000;
+    transition: background 1s;
+    background: rgba(0, 0, 0, 0.1);
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.modalAccountDialog:target {
+	opacity:1;
+
+	pointer-events: auto;
+}
+
+
+
+
+.modalAccountDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.8);
+    
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  
+    
+}
+
+.backgroundBlur{
+	width: 70vw;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	
+    /* filter: blur(10px); */
+
+}
+
+
+
+
+
+
+/*
+
+
+*/
+
+.animated.bounceIn.accountBoxClass {
+    height: 60vh;
+    width: 70vw!important;
+    text-align: center;
+  
+}
+.completeApp {
+    filter: blur(5px);
+}

@@ -1,0 +1,295 @@
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+ 
+}
+
+button#loginSubmitButtonRG {
+    background: rgba(255,255,255,0.25);
+    border: 1px solid #FFFFFF;
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    color: rgba(255,255,255,0.77);
+    width: 50%;
+    float: left;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    transition: color 0.3s, background 0.3s;
+}
+
+a.ForgotPasswordURLLink {
+    text-align: center;
+    color: lightgray;
+
+    padding-top: 50px;
+    display: block;
+    height: 100%;
+}
+
+button#loginSubmitButtonRG:hover {
+    background: #ff0770;
+    border: 1px solid #rgba(255,255,255,0.25);
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    color: #ffffff;
+    width: 50%;
+    float: left;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.ModalFormInput {
+    background: rgba(255,255,255,0.25);
+    border: 1px solid #FFFFFF;
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    color: rgba(255,255,255,0.77);
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 350px;
+    position: relative;
+    margin: auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: none;
+    color: #000000;
+    /* height: 100vh; GIve some breithing close space */
+    display: block;
+}
+
+
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  text-align: center;
+    transition: opacity 0.3s;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: #ffffff;
+  text-align: center;
+    transition: opacity 0.3s;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+  text-align: center;
+    transition: opacity 0.3s;
+}
+
+body.modalDialog-open .bodyClass{
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+.close {
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #000;
+    transition: background 1s;
+            background: rgba(0, 0, 0, 0.1);
+
+}
+
+.bodyClass{
+        filter: blur(5px);
+}
+
+button#SignInSubmitButton {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    color: #FF0770;
+    width: 100%;
+    margin-top: 5px;
+        transition: background 0.7s, color 0.7s;
+
+}
+
+button#SignInSubmitButton:focus {
+    background: #FF0770;
+    border: 1px solid #ffffff;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    transition: background 0.4s, color 0.4s;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button#SignInSubmitButton:hover {
+    background: #FF0770;
+    border: 1px solid #ffffff;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    transition: background 0.4s, color 0.4s;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.alert-danger{
+display: none;
+    background: none!important;
+    color: #ff0770!important;
+    border: none!important;
+}
+
+
+button#loginSubmitButtonFB {
+    width: 100%;
+    border: none;
+    background: #3b5998;
+    color: #e4e4e4;
+    font-family: HelveticaNeueLight;
+    margin-top: 10px;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.LoginHeaderTitle {
+    text-align: center;
+    font-family: HelveticaNeueLight;
+    font-size: 21px;
+    padding: 0px;
+    color: #ffffff;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+button#loginSubmitButton {
+    background: #ff0770;
+    color: white;
+     transition: background 0.7s, color 0.25s, border 0.3s, font-size 0.15s;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 27px;
+    border-radius: 100px;
+    border: solid #ffffff 2px;
+    font-family: font92825;
+    text-shadow: 0px 0 20px;
+    box-shadow: grey 0 0 15px 3px;
+
+}
+
+input:focus {
+    border: solid 5px #ff0770;
+    transition: border 0.3s;
+    
+}
+
+input:hover {
+    border: solid 5px #ff0770;
+        transition: border 0.3s;
+
+}
+
+
+.wr1Logo {
+    background-image: url(https://wr1test.imgix.net/images/WR1-LOGO-FINAL2-SHINE+INVERT.png?w=100pxh=100px);
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+button#loginSubmitButton:hover {
+    background: #ffffff;
+    color: #ff0770;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 100px;
+      transition: background 0.7s, color 0.25s, border 0.3s, font-size 0.15s;
+
+    border: solid #ff0770 2px;
+    font-size: 28px;
+    font-family: font92825;
+    text-shadow: 0px 0 20px;
+    box-shadow: #ff0770 0 0 15px 3px;
+      transition: font-size 0.25s;
+    
+}
+/* import some fonts */
+
+@font-face {
+    /*Import the font */
+    font-family: "HelveticaNeueLight";
+    src: url("https://s3.amazonaws.com/wr1test/fonts/helveticaneue/HelveticaNeue+Light.ttf");
+  
+
+
+}
+
+.HintTextCalss {
+
+    color: darkgray;
+    text-align: center;
+    margin-top: 5px;
+    transition: color 1s;
+}
+.HintTextCalss:hover {
+
+    color: lightgray;
+}
+
+
+a.LoginBackButtonClass{
+    background: rgba(255,7,64,0.3);
+    border-radius: 50px;
+    color: #ff0770;
+    width: 30px;
+    padding: 5px;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    transition: background 0.4s, border 0.4s, padding 0.4s, width 0.4s;
+}
+
+
+a.LoginBackButtonClass:hover{
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    color: #ff0770;
+    border: solid white 1px;
+    width: 40px;
+     padding: 10px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}

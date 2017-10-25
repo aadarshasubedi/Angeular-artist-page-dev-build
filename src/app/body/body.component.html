@@ -1,0 +1,90 @@
+<div class="pageWrapper" id="BodyMainageIDWrapper">
+
+
+  
+ <div class="CallToActionWrapper">
+        <app-call-to-action-quick-links></app-call-to-action-quick-links>
+</div>
+
+
+
+        <div class="layer">
+    <div class="BackgroundContainer" id="BackgroundContainerID">
+
+
+
+
+
+ <div class="frontPageSlider">
+
+ <!-- 
+
+        <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of MoreSliders" class="DisplayAllSliders">
+        
+        <div class="SliderContainer">
+                    
+                      <img src="{{ slide.ImageURL }}" alt="" class="bodyClass clubMainBackground" >
+        </div>
+                </div>
+            </ngx-slick>
+ 
+        -->
+
+        <div class="ImageCOureselWrapper">
+<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" >
+        
+     <div ngxSlickItem class="DisplayAllSliders" *ngFor="let slide of MoreSliders" >
+          
+        <div    id="ArtistParalax" class="bodyClass clubMainBackground" [ngStyle]="{'background-image': 'url(' + WallDatabackground + ')'}" >
+            </div> 
+
+        <img src="{{ slide.ImageURL }}" alt="" id="ArtistParalax" class="bodyClass clubMainBackground" >
+   
+    <!-- <div class="bodyClass clubMainBackground" [ngStyle]="{'background-image': 'url(' + slide.ImageURL + ')'}" ></div> -->
+
+     
+ <div    class="ImageSlider" *ngFor="let BGImage of MoreSliders" [hidden]="ShowMoreImageSliders">
+
+{{BGImage.imageTitle}}
+ <div class="bodyClass clubMainBackground" [ngStyle]="{'background-image': 'url(' + slide.ImageURL + ')'}" ></div> 
+
+
+</div>
+
+</div> 
+</ngx-slick>
+</div>
+  <!-- -->
+</div> 
+
+</div>
+</div>
+     
+  
+
+
+
+
+
+<app-call-to-action-main-body-buttons></app-call-to-action-main-body-buttons>
+
+  
+
+<app-bubble-menu-bubble-peice></app-bubble-menu-bubble-peice>
+
+<app-main></app-main>
+<!-- <router-outlet></router-outlet> -->
+
+<app-background></app-background>
+<app-header></app-header>
+
+
+
+  
+
+
+
+<app-bottom-banner></app-bottom-banner>
+
+</div>

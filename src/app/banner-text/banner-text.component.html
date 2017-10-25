@@ -1,0 +1,20 @@
+
+<div class="BannerText">
+     
+
+  <li *ngFor="let message of messages; let i = index; let even = even; let odd = odd; let first = first; let last = last" class="messageScrollClass"
+  [ngClass]="{ first: first, last: last }">
+   <!--  <app-banner-text-from-wrone></app-banner-text-from-wrone> -->
+     {{message.text}} 
+     {{i}}
+     <button (click)="UpdateMessage(message.text)" class="MessageModButton" id="editButtonID"><i class="fa fa-pencil" aria-hidden="true" id="EditPencilButton"></i></button>
+      <button  (click)="DeleteMessage(message.text)" class="MessageModButton" id="deleteButtonID"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <button (click)="addMessage(message.text)" [hidden]="[ngCLass] == last" class="MessageModButton" id="addButtonID" ><i class="fa fa-plus" aria-hidden="true" ></i>         <input type="text" [(ngModel)]="text"/>
+</button>
+   
+  
+ 
+
+   </li> 
+
+    </div>

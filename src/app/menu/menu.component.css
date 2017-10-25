@@ -1,0 +1,310 @@
+ul.MenuItemUL {
+    display: flex;
+    list-style-type: none;
+    widows: 100%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 3px;
+
+    position: left;
+
+}
+#MenuURLIDLogin{
+
+     background: none;
+    padding: 8px;
+    transform: color 0.27s;
+    color: rgb(94, 94, 94);
+text-transform: uppercase; 
+font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.27s;
+
+}
+
+#MenuURLIDLogin:hover{
+    background: rgba(0, 0, 0, 0.33);
+    display: block;
+    padding: 8px;
+    transition: background 0.27s;
+    color: var(--text-Color-Element-Variable-hover);
+
+    text-decoration: underline;
+    list-style-type: none;
+
+
+}
+
+
+#LogOutMenu{
+    color: rgb(94, 94, 94);
+     background: none;
+ 
+    padding: 7px;
+   /* transform: color 0.27s; */
+   /* color: var(--text-Color-Element-Variable); */
+text-transform: uppercase; 
+font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.27s;
+
+}
+
+#LogOutMenu:hover{
+    background: rgba(0, 0, 0, 0.33);
+    display: block;
+    color: rgb(94, 94, 94);
+
+    padding: 7px;
+    transition: all 0.27s;
+   /* color: var(--text-Color-Element-Variable-hover); */
+
+    text-decoration: underline;
+    list-style-type: none;
+
+
+}
+
+
+
+ul.MenuItemUL {
+    margin-bottom: 0px!important;
+
+    background: rgba(255,255,255,0.8);
+    border-radius: 3px;
+
+}
+li.MenuItemLI {
+    display: flex;
+}
+.MoreIcon {
+    color: #ff0770;
+}
+
+li.MenuItemLI > a {
+    background: none;
+    display: block;
+    padding: 8px;
+    transform: color 0.27s;
+    color: var(--text-Color-Element-Variable);
+text-transform: uppercase; 
+font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: background 0.27s;
+
+}
+
+
+a.MenuLoginURL {
+    background: none;
+    display: block;
+    padding: 8px;
+    transform: color 0.27s;
+    color: var(--text-Color-Element-Variable);
+text-transform: uppercase; 
+font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: background 0.27s;
+
+}
+
+
+
+a.MenuLoginURL:hover {
+    background: rgba(0, 0, 0, 0.33);
+    display: block;
+    padding: 8px;
+    transition: background 0.27s;
+    color: var(--text-Color-Element-Variable-hover);
+
+    text-decoration: underline;
+    list-style-type: none;
+
+}
+
+
+
+
+
+.MenuClassMobile {
+
+    display: block;
+}
+
+li.MenuItemLI:hover > a {
+    background: rgba(0, 0, 0, 0.33);
+    display: block;
+    padding: 8px;
+    transition: background 0.27s;
+    color: var(--text-Color-Element-Variable-hover);
+
+    text-decoration: underline;
+    list-style-type: none;
+
+}
+
+a.MenuLoginURL {
+    color: var(--text-Color-Element-Variable);
+}
+
+/* for variable use */
+a.MenuLoginURL {
+
+    --text-Color-Element-Variable: rgb(94, 94, 94); 
+     --text-Color-Element-Variable-hover: #ffffff; 
+}
+
+
+
+
+/* Script in charge of menu */
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-toggle {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  height: 18px;
+  line-height: 1;
+  margin: 7px auto;
+  outline: 0;
+  padding-right: 35px;
+  position: relative;
+  width: 100%;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  opacity: 1;
+  /* position: absolute; */
+  /* widows: 100%; */
+  transition: all .5s ease;
+  transform: translateY(0);
+}
+p.ng-hide-add {
+  transform: translateY(0);
+  opacity: 1;
+}
+p.ng-hide-add-active {
+  transform: translateY(-15px) rotateX(-90deg);
+  opacity: 0;
+}
+p.ng-hide-remove {
+  transform: translateY(15px) rotateX(90deg);
+  opacity: 0;
+}
+p.ng-hide-remove-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+span,
+span:before,
+span:after {
+  background-color: #333;
+  height: 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(7px);
+  transition: all 0.5s ease;
+  width: 25px;
+}
+
+span:before,
+span:after {
+  content: '';
+  transform: translateY(0);
+}
+
+.hamburger span:before {
+  transform: translateY(-7px);
+}
+.hamburger span:after {
+  transform: translateY(7px);
+}
+
+.arrow-right span {
+  transform: rotate(-180deg) translateY(-7px) translateX(0);
+}
+.arrow-right span:before, .arrow-right span:after {
+  width: 15px;
+}
+.arrow-right span:before {
+  transform: rotate(45deg) translateY(14px) translateX(-8px);
+}
+.arrow-right span:after {
+  transform: rotate(-45deg) translateY(-14px) translateX(-8px);
+}
+
+.arrow-left span {
+  transform: rotate(180deg) translateY(-7px) translateX(0);
+}
+.arrow-left span:before, .arrow-left span:after {
+  width: 15px;
+}
+.arrow-left span:before {
+  transform: rotate(-45deg) translateY(6px) translateX(0);
+}
+.arrow-left span:after {
+  transform: rotate(45deg) translateY(-6px) translateX(0);
+}
+
+
+
+.MenuClassMobile {
+
+    display: block;
+        top: auto; 
+}
+
+.MenuClassMobileHamburgerReady{
+    display: none;
+}
+
+/* Mobile ready menu functioning */
+
+@media screen and (max-width: 680px) {
+  
+
+.MenuClassMobile{
+    display: block;
+
+    top: auto; 
+}
+
+.MenuClassMobileHamburgerReady{
+    display: block;
+
+    top: auto; 
+}
+
+ul.MenuItemUL {
+    display: none;
+    list-style-type: none;
+    z-index: 999999;
+    text-align: center;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  position: right;
+top: auto; 
+background: rgba(255,255,255,0.8);
+border-radius: 3px;
+
+}
+
+}
+
+
+
+
+

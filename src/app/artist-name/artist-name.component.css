@@ -1,0 +1,159 @@
+h1.ArtistNameTagTitleClass {
+    font-size: 4vw;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+
+h1.ArtistNameTagTitleClass:hover {
+    color: #ff0770;
+    font-size: 4vw;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+}
+
+h1.ArtistNameTagTitleClass:active {
+    color: #ffffff;
+    font-size: 4vw;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+}
+
+
+@font-face {
+    font-family: HelveticaNeueUltraLight;
+    src: url(/assets/fonts/HelveticaNeueUltraLight.dfont);
+}
+
+
+@media screen and (max-width: 680px) {
+
+h1.ArtistNameTagTitleClass {
+    font-size: 5vw;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+     transition: all 0.3;
+}
+    h1.ArtistNameTagTitleClass:hover {
+    font-size: 5vw;
+    color: #ff0770;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+     transition: all 0.5s;
+}
+
+    h1.ArtistNameTagTitleClass:active {
+    color: #ffffff;
+    font-size: 5vw;
+    color: #ff0770;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+     transition: all 0.5s;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 1500px) {
+
+h1.ArtistNameTagTitleClass {
+    font-size: 3vw;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+
+
+h1.ArtistNameTagTitleClass:hover {
+    font-size: 3vw;
+    color: #ff0770;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+}
+
+
+h1.ArtistNameTagTitleClass:active {
+    font-size: 3vw;
+    color: #ffffff;
+    max-height: 60px;
+    display: block;
+    font-family: font92825;
+    margin-top: auto;
+    padding-top: 10px;
+     padding-bottom: auto;
+     padding-left: 10px;
+    margin-left: auto;
+     margin-right: auto;
+    font-weight: lighter;
+}
+
+
+}
+
+

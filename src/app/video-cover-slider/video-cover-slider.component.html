@@ -1,0 +1,63 @@
+
+
+
+<!--
+<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="slider">
+<figure>
+    <div class="SliderImagesNGFor" *ngFor="let video of videos">
+<img class="SliderImage" src="{{video.placeholderURL}}" alt>
+
+
+</div>
+</figure>
+</div>
+
+-->
+
+<!--
+<div class="slider">
+  <div class="sliderArrows">
+    <a (click)="backWard()">&lt;<!--Use icons of your choice, although these simple Lower than and greater signs also looks well</a>
+    <a (click)="forWard()">&gt;</a>
+  </div>
+  <ul class="slideShow">
+    <li *ngFor="let video of videos" [ngClass]="li?.classes">
+        <printSlide [meta]="li"></printSlide>
+    </li>
+  </ul>
+</div>
+-->
+<!--
+<div class="testDiv">
+  <ul class="slides">
+
+   
+    <span *ngFor="let video of Testvideos">
+         <li>
+    <h2>{{video.text}}</h2>
+      <img class="ImageClass" src="{{video.placeholderURL}}" alt="{{video.text}}">
+        </li>
+ </span>
+  
+
+    </ul>
+</div>  -->
+<div class="VideoPageSliderWrapper" id="VideoPageSliderWrapper">
+
+  <!-- You can now use your library component in app.component.html -->
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+        <div ngxSlickItem *ngFor="let slide of Testvideos" class="slide">
+
+<div class="SliderContainer">
+            <div class="HoverTextVideo">Play</div>
+              <img src="{{ slide.owner.backgroundUrl }}" alt="" class="videoSliderImageClass" >
+</div>
+        </div>
+    </ngx-slick>
+      </div>
+    <!-- artist contorl cms 
+    <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->

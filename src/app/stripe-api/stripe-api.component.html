@@ -1,0 +1,76 @@
+<div class="Backgoundtitnedfogglassclass">
+<div id="openStripeModal" class="modalStripeDialog ">
+      <a href="#openDashboardModal" title="CloseStr" class="closeStr" rel="noopener"> 
+        
+          </a>
+
+<div class="animated bounceIn stripeBoxClass">
+<div class="BackButtonInStripe" (click)="goBack()"> Account </div>
+    <p class="WelcomeToUserGreeting">Welcome to the WR1 Secure stripe payment managment page</p>
+
+
+    <!-- inner tabs -->
+<!-- begin the stripe form custom - Developed by Avi tannnbaum -->
+<h1 class="HeaderOfCompaneyNameStripe">WR1 Inc.</h1>
+
+<div class="formWrapperClassStripe">
+<form action="" method="POST" id="payment-form" (submit)="getToken()" class="FormClassStripe">
+  <span class="payment-message">{{message}}</span>
+
+  <div class="form-row">
+    <label>
+     <!--  <div class="EmailTitle">Email</div> -->
+    <!--  <input [(ngModel)]="email" name="email" type="text" size="20" data-stripe="email"> -->
+    </label> 
+    <label>
+      <div class="CardNumberTitle">Card Number</div>
+      <input [(ngModel)]="cardNumber" name="card-number" type="text" size="20" data-stripe="number">
+    </label>
+  </div>
+
+  <div class="form-row">
+     <label>
+        <div class="ExpirationDateTileClass">Expiration (MM/YY)</div>
+   
+      <input [(ngModel)]="expiryMonth" name="expiry-month" type="text" size="2" data-stripe="exp_month">
+   
+    <span> / </span>
+    <input [(ngModel)]="expiryYear" name="expiry-year" type="text" size="2" data-stripe="exp_year">
+    </label>
+  </div>
+ 
+
+  <div class="form-row">
+    <label>
+      <div class="CVCStyleTitleClass">CVC</div>
+      <input [(ngModel)]="cvc" name="cvc" type="text" size="4" data-stripe="cvc">
+    </label>
+    <label>
+    <!--  <div class="PasswordTitle">Password</div> -->
+    <!--   <input [(ngModel)]="password" name="password" type="password" size="20" data-stripe="password" placeholder="Enter a password"> -->
+    </label>
+  </div>
+
+  <input type="submit" value="Submit Payment">
+</form>
+
+
+
+
+<div class="checkIfUserAlreadyHasPaymentClass" id="checkIfUserAlreadyHasPaymentID">
+
+  <app-existing-user-payment-method></app-existing-user-payment-method>
+</div>
+</div>
+
+
+
+
+</div>
+  <div class="backgroundBlur">
+</div>
+<p class="HintTextCalss">Click anywhere to close</p>
+    </div>
+    
+
+</div>

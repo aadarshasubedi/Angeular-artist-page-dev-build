@@ -1,0 +1,174 @@
+.ticketslidertableRow {
+    overflow: scroll;
+    height: 30vh;
+
+
+}
+
+
+a.GetCommentsButtonClass {
+    width: 100px;
+    display: block;
+}
+.TicketLocationClass {
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* Hover */
+
+
+.singleticketWrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.MeetNGreetClass.TicketButtonClass:hover {
+    background: white!important;
+    color: red!important;
+        transition: all 0.15s;
+
+}
+
+.BuyTicketsClass.TicketButtonClass:hover {
+    background: white!important;
+    color: red!important;
+          transition: all 0.15s;
+
+}
+
+/* Regular */
+
+
+.MeetNGreetClass.TicketButtonClass {
+    background: red;
+    color: white;
+        transition: all 0.15s;
+
+}
+
+.BuyTicketsClass.TicketButtonClass {
+    background: red!important;
+    color: white;
+          transition: all 0.15s;
+
+}
+
+input#SearchFOrTcketID {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    width: 80%;
+    color: #ff0770;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.ticketsTable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.025);
+    padding: 20px;
+    display: block;
+}
+
+.TicketsDataclass {
+    margin-left: 50px;
+}
+
+.FullDateDivClass {
+    float: left;
+   font-weight: bolder;
+
+}
+.eventDateClass {
+    font-size: 26px;
+    text-align: center;
+}
+.ticketEventClass {
+    color: gray;
+    font-family: HelveticaNeueLight;
+}
+
+.ticketSiteURLClass{
+    color: black;
+    font-family: HelveticaNeueLight;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.ticketSiteURLClass:hover{
+    color: gray;
+    font-family: HelveticaNeueLight;
+    text-decoration: underline;
+     transition: all 0.3s;
+}
+.TicketButtonClass {
+    
+  font-size: 90%;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    border: solid lightgray 1px;
+    border-radius: 1px;
+    color: red;
+    min-height: 30px;
+    min-width: var(--min-width-purchase-box);
+    background: rgba(255,255,255, 0.4);
+    font-weight: bolder;
+  --min-width-purchase-box: 30px;
+    margin: 5px;
+     
+
+        text-decoration: none;
+    transition: all 0.15s;
+}
+
+a.CallToActionButtonClass {
+    float: right;
+}
+.TicketButtonClass:hover {
+ 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    border: solid #ff0770 1px;
+    border-radius: 1px;
+    color: #ffffff;
+    background: rgba(255,7,112, 0.4);
+    font-weight: bolder;
+      min-height: 30px;
+    min-width: var(--min-width-purchase-box);
+    font-size: 100%;
+    margin: 5px;
+
+    --min-width-purchase-box: 30px;
+}
+
+.commentCountButton {
+    width: 70px;
+}
+
+.callTOActionWrapperClass {
+    display: block;
+    width: auto;
+    float: right;
+}
+
+a.GetCommentsButtonClass {
+    text-decoration: none;
+}
+
+.CallToActionButtonClass{
+    text-decoration: none;
+}
+.CallToActionButtonClass:hover{
+    text-decoration: none;
+}
+
+

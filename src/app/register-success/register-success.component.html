@@ -1,0 +1,54 @@
+
+
+<div id="registers" class="modalDialog">
+  <a (click)="goBack()" title="Close" class="close"></a>
+
+  <div>	
+      <!-- Logo Over here -->
+
+      <h1> Welcome </h1>
+<div class="wr1Logo" id="loginLogo">
+</div>
+
+<a href="#login" class="LoginBackButtonClass" rel="noopener">
+<div class="BacktoLogin"><</div></a>
+        <div class="LoginHeaderTitle">Welcome to WR1</div>
+
+<div ng-show="error" class="alert alert-danger">{{error}}</div>
+
+      <form name="form" action="#login.php" method="get" id="loginForm">
+          <!-- Add the feilds -->
+         <!-- Depricated =>  <input form="loginForm" class="ModalFormInput" id="Username" name="usernameValue" type="text" placeholder="Username*">
+          <br> <= -->
+          <input form="loginForm" class="ModalFormInput" id="Email" name="emailValue" type="text" placeholder="Full Name*">
+          <br>
+          <input form="loginForm" class="ModalFormInput" id="Password" name="paswordValue" type="password" placeholder="Email*">
+          <br>
+          <input form="loginForm" class="ModalFormInput" id="CPassword" name="CpaswordValue" type="password" placeholder="Password*">
+          <br>
+
+          <div class="signInClass"> 
+            <div class="SignUpWrapperClass">
+           <br>
+          <button type="submit" form="loginForm"  value="Submit" class="submitButton" id="loginSubmitButtonRG"><div class="ButtonText" id="ButtonTextExploreAsGuestID">Set Profile Image</div></button>
+          <!-- google feolocation API -->
+          <div id="out"></div>
+          </div>
+      </div>
+      <a class="submitButton" form="loginForm" href="#login" id="loginSubmitButtonRG" rel="noopener" type="submit" value="Submit"><a class="MenuLoginURL submitButton" href="#register" rel="noopener"><div class="ButtonText" id="ButtonTextSignUpID">Back to login</div></a></a>
+            
+                   </form>
+
+<div class="LoginWithSocialLoginClassWrapper">
+          <button type="submit" form="loginForm" value="Submit" class="submitButton" id="loginSubmitButtonFB"><div class="FacebookLogo"></div><div class="ButtonText" id="ButtonLoginwithFBID">Create Account with Facebook</div></button>
+
+
+
+
+  </div>
+
+<div class="forgotPasswordDivClass"><a href="#forgotPassword" class="ForgotPasswordURLLink" rel="noopener">Forgot your Password?</a></div>
+          <p class="HintTextCalss">Click anywhere to close </p>
+
+</div>
+</div>

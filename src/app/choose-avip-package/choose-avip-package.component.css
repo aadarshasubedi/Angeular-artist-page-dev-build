@@ -1,0 +1,89 @@
+.modalVIPDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.2);
+	z-index: 99999;
+	opacity:0;
+	-moz-transition: opacity 0.4s ease-in;
+	transition: opacity 0.4s ease-in;
+	pointer-events: none;
+
+   
+}
+
+.FormTitleCampaingH1 {
+    text-align: center;
+    color: #ff0770;
+}
+
+.animated.bounceIn {
+    border: solid rgba(255, 7, 112, 0.2) 1px;
+    box-shadow: rgb(142, 142, 142) 0 0 20px 0px;
+}
+
+.HintTextCalss {
+
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    transition: color 1s;
+}
+.HintTextCalss:hover {
+
+    color: lightgray;
+}
+
+
+.SubscribeHere {
+
+    color: #FF0770;
+}
+.close {
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+            background: rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #000;
+    transition: background 1s;
+}
+
+.modalVIPDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalVIPDialog > div {
+   
+    position: relative;
+     margin-left: 0vw;
+     margin-right: 0vw;
+     margin-top: 0vh;
+     margin-bottom: 0vh;
+     height: 100vh;
+    padding: 5px 20px 13px 20px;
+    border-radius: 3px;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+
+
+
+
+
+
+/*
+
+
+*/

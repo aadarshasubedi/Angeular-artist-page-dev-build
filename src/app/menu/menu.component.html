@@ -1,0 +1,96 @@
+
+
+<div class="MenuClassMobile">
+
+      <app-login></app-login>
+    <app-register></app-register>
+    <app-register-success></app-register-success>
+    <app-signup></app-signup>
+    
+  <ul class="MenuItemUL">
+
+    <li class="MenuItemLI">
+      <div *ngFor="let menuItem of menuItems">
+
+          <a href="{{menuItem.URL}}" class="MenuLoginURL" (click)="openLogin()" id="MenuURLID" rel="noopener">{{menuItem.title}}</a>
+
+     </div>
+
+    </li>
+      <li class="MenuItemLI">
+              <div class="MenuLoginURLLogin" (click)="login()" id="MenuURLIDLogin" rel="noopener" [hidden]="HideLoginButton">Login</div>
+
+                <div class="MenuLoginURL" (click)="logout()" id="LogOutMenu" [hidden]="hideLogout">Logout</div>
+    </li>
+        <app-login></app-login>
+    <app-register></app-register>
+    <app-register-success></app-register-success>
+    <app-signup></app-signup>
+
+       
+
+
+  </ul>
+</div>
+
+
+      <app-login></app-login>
+    <app-register></app-register>
+    <app-register-success></app-register-success>
+    <app-signup></app-signup>
+
+
+
+<!--mobile menue -->
+
+
+<!-- a.MenuLoginURL-->
+
+
+
+<!-- new test bootstrap mobile ready menu
+
+<header class="clearfix">
+  <div class="container">
+      <div class="header-left">
+          <h1 class="CompanyIDClassHeader">WR1 Inc.</h1>
+      </div>
+      <div class="header-right">
+        <label for ="open">
+          <span class="hidden-desktio"></span>
+        </label>
+        <input type="checkbox" name="" id="open">
+        <nav>
+          <div *ngFor="let menuItem of menuItems">
+                  <a href="{{menuItem.URL}}" class="MenuLoginURL">{{menuItem.title}}</a>
+                  </div>
+        </nav>
+
+
+        </div>
+      </div>
+</header>
+ -->
+
+
+
+<!-- Mobile 
+<div class="MenuClassMobile" [hidden]="true">
+
+  <div (click)="arrow = !arrow" [ngClass]="{'hamburger': !arrow, 'arrow-right': arrow}" class="nav-toggle">
+      <ul class="MenuItemUL">
+    <div *ngFor="let menuItem of menuItems">
+          <li class="MenuItemLI">
+
+         <a href="{{menuItem.URL}}" class="MenuLoginURL"> <p class="InnerMenuP" [hidden]="arrow">{{menuItem.title}}</p></a>
+
+            </li>
+
+        </div>
+        </ul>
+                       <p [hidden]="!arrow">Close</p>
+
+    <span></span>
+  </div>
+  </div>
+-->

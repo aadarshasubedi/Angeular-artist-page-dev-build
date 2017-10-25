@@ -1,0 +1,58 @@
+.WidgetClassCSS {
+    height: 150px;
+    width: 100%;
+
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: block;
+    background: rgba(255,255,255,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0.3px grey;
+    text-decoration: none;
+    transition: background 0.3s, border 0.3s;
+}
+
+.WidgetClassCSS:hover {
+    height: 150px;
+    width: 100%;
+
+    margin-left: 2px;
+    margin-right: 2px;
+    display: block;
+    background: rgba(255,255,255,1);
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0.3px rgba(255, 7, 112, 0.8);
+    text-decoration: none;
+}
+
+.AccountDashboardLivePreviewWrapper {
+    font-family: HelveticaNeueLight;
+    padding-top: 20%;
+    font-weight: bolder;
+    font-size: 14px;
+}
+a.AccountDashboardLivePreviewWrapper:hover {
+text-decoration: none;
+}
+
+.AccountSectuonTitle {
+    text-decoration: none;
+        text-transform: uppercase;
+    color: #ff0770;
+    transition: color 0.3s;
+}
+
+.AccountSectuonTitle:hover {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.ClickToActionMore {
+    color: black;
+}
+
+a.AccountwidgetURLClass:hover {
+    text-decoration: none;
+}

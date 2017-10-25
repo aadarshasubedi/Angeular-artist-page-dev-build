@@ -1,0 +1,62 @@
+
+<div class="Backgoundtitnedfogglassclass">
+<div id="openAccountModal" class="modalAccountDialog ">
+      <a href="#openDashboardModal" title="CloseAcc" class="closeAcc" rel="noopener"> 
+        
+          </a>
+
+<div class="animated bounceIn accountBoxClass">
+
+    <p class="WelcomeToUserGreeting">Welcome to the account area</p>
+
+
+    <!-- inner tabs -->
+
+
+
+<md-tab-group>
+        <md-tab label="Profile">
+            <!-- Profile Account info -->
+          <h1 class="Profile information page"></h1>
+          <app-user-logged-in-infor-using-token></app-user-logged-in-infor-using-token>
+
+          <p> Some more profile data will be here </p>
+        </md-tab>
+        <md-tab label="Settings">
+            <!-- settings for Account info -->
+          <h1 class="Account settings page"></h1>
+
+
+        </md-tab>
+        <md-tab label="Privacy">
+        <!-- privacy -->
+          <h1 class="Privacy settings page"></h1>
+
+
+      </md-tab>
+      <md-tab label="Subscriptions">
+         <h1 class="Manage my subscriptions"></h1>
+
+        <!-- subscriptions of the user list -->
+
+      </md-tab>
+          <md-tab label="Payment">
+        <!-- payment settings of the user list -->
+         <h1 class="Edit payment mnethods"></h1>
+           <a href="#openStripeModal" class="manageStripeButtonClass"><p class="ManageStripeButtonTextP" rel="noopener"> Update Payemnt </p></a>
+      </md-tab>
+</md-tab-group>
+
+
+
+</div>
+  <div class="backgroundBlur">
+</div>
+<p class="HintTextCalss">Click anywhere to close</p>
+    </div>
+    
+
+</div>
+
+
+            <app-stripe-api></app-stripe-api>

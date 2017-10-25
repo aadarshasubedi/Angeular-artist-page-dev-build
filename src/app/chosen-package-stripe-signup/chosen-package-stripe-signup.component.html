@@ -1,0 +1,137 @@
+<!-- designed and developed by Avi tannenbaum for WR1 -->
+<div class="StepTwoCLass stripeBoxClass">
+<h1 class="StepId"></h1>
+Welcome {{this.FullName.value}}!
+<p> You have chosen {{chosenPackage}}</p>
+<form action="" #fromDataf="ngForm" (ngSubmit)="openCheckout(fromDataf)" method="POST" id="payment-form" novalidate>
+ 
+    
+  <ul class="InputSignupTableClassUL">
+   <!-- Step 1 -->  
+    
+
+   <!-- create a new account section -->
+   <!-- registration end points -->
+  <div class="CreateANewAccountClassWrapper">
+<div class="SignupTitleCLass"> Create a new account</div>
+
+   <!-- email -->
+  <div class="form-row">
+    <td class="TableDataInputCLass" id="EmailTD">
+      <!-- email -->
+    <input  #emailBox (keyup.enter)="checkExistingUser(emailBox.value)" (blur)="checkExistingUser(emailBox.value)" [(ngModel)]="emailFeild" type="text" class="signupInput" id="emailFeildInputID" placeholder="Email" name="email" pattern="[^ @]*@[^ @]*" ngModel required #email="ngModel" >
+    </td>
+  </div>
+
+  <!-- password -->
+  <div class="form-row">  
+      <td class="TableDataInputCLass" id="PasswordTD">
+
+    <input [(ngModel)]="password" type="password" class="signupInput" id="PasswordFeildInputID" placeholder="Password" name="password" ngModel required>
+          </td>
+      </div>
+  
+    </div>
+    <br>
+
+<!-- End of step -->
+
+
+<!-- payment method -->
+<div class="PaymentMethodWrapper">
+    <div class="SignupTitleCLass"> Enter a payment method </div>
+    
+<div class="form-row">
+     <td class="TableDataInputCLass" id="FullNameTD">
+<!-- Full name -->
+    <input [(ngModel)]="fullName" class="signupInput" id="FullNameFeildInputID" placeholder="Full Name" name="full-name" ngModel required #FullName="ngModel" >
+    </td>
+  </div>
+
+  <div class="form-row">
+    <td class="TableDataInputCLass" id="CardNumberTD">
+<!-- Card Number -->
+    <input  [(ngModel)]="cardNumber" type="text" class="signupInput" id="CardNumberFeildInputID" placeholder="Full Card Number" name="card-number" ngModel required #CardNumber="ngModel" data-inputmask="'mask': '9999 9999 9999 9999'" size="20" data-stripe="number">
+    <span class="payment-message">{{message}}</span>
+  </td>
+</div>
+
+<!-- CardNumberExpDate -- Commented for seperation of month and year 
+<div class="form-row">  
+    <td class="TableDataInputCLass" id="CardNumberExpDateTD">
+    <input type="date" class="signupInput" id="CardNumberExpDateFeildInputID" placeholder="Expire date" name="CardNumberExpDate" ngModel required #CardNumberExpDate="ngModel" >
+    </td>
+  </div> -->
+
+<!-- Expiration Date -->
+  <div class="form-row">
+    <!-- Month -->
+    <td class="TableDataInputCLass" id="CardNumber">
+      <select [(ngModel)]="expiryMonth" name="expiry-month" data-stripe="exp_month" list="monthOption">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <span> / </span>
+   
+    <!-- Year -->
+    <select [(ngModel)]="expiryYear" name="expiry-year" data-stripe="exp_year" list="yearOption">
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
+      </select>
+    </td>
+  </div>
+
+  <div class="form-row">  
+    <td class="TableDataInputCLass" id="CardNumberCVCTD">
+<!-- CardNumberCVC -->
+    <input [(ngModel)]="cvc" size="4" data-stripe="cvc" type="text" class="signupInput" id="CardNumberCVCFeildInputID" placeholder="CVC" name="cvc" ngModel required #CardNumberCVC="ngModel" >
+    </td>
+  </div>
+
+    <br>
+<!--  end of payment metho wrapper -->
+</div>
+ 
+    <div class="form-row"> 
+        <br>
+        <td class="TableDataInputCLass" id="SubmitTD">
+<!-- Submit -->
+ <!-- <button class="joinButton" (click)="openCheckout()"><h1 class="SubmitButtonH1">Join</h1></button> -->
+
+        <button class="joinButton"><h1 class="SubmitButtonH1">Join</h1></button>
+ 
+</td>
+</div>
+
+</ul>
+
+
+</form>
+
+</div>
+
+{{result}}
+

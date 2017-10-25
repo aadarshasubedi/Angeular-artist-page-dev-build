@@ -1,0 +1,57 @@
+
+.BehindAccessVIPButtonClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    max-height: 30px;
+}
+
+
+app-get-vip-button {
+    display: inline-flex;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+.BehindThescenesePageClass {
+background: rgba(255,255,255,0.6);
+    height: 100vh;
+    display: block;
+}
+
+h1.PageTitleClass {
+    padding-top: 35px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 4vw;
+   
+    display: -ms-flexbox;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media (max-width: 680px){
+h1.PageTitleClass {
+    padding-top: 35px;
+    text-align: center;
+    font-family: font92825;
+    color: black;
+    font-size: 10vw;
+
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 35vw;
+    margin-right: auto;
+}
+
+}

@@ -1,0 +1,226 @@
+.DashControll {
+    background: rgba(0, 0, 0, 0.33);
+    padding: 1%;
+    color: white;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: solid rgba(255, 255, 255, 0.4) 4px;
+    top: 50%;
+z-index: 450;
+    float: right;
+    margin-right: 20px;
+    right: 3px;
+    transition: color 1s, background 0.3s, border 0.5s, font-size 0.1s, float 1s, right 1s;
+    position: fixed;
+}
+
+
+
+.sidenav {
+    width: 0;
+
+}
+
+
+a.ClickToOpenDashboardClass{
+
+    color: white;
+}
+a.ClickToOpenDashboardClass:hover{
+
+    color: white;
+    text-decoration: none;
+}
+
+.DashControll:hover{
+    background: rgba(60, 60, 60, 0.33);
+font-size: 16px;
+
+
+    border: solid rgba(255, 255, 255, 0.9) 4px;
+
+    transition: color 1s, background 0.3s, border 0.5s, font-size 0.1s ;
+
+}
+#slideout {
+  position: block;
+ 
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout_inner {
+  position: fixed;
+  top: 40px;
+  left: -250px;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout:active {
+  left: 250px;
+}
+#slideout:active #slideout_inner {
+  left: 0;
+}
+
+
+
+.modalDashBoardDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.2);
+	z-index: 99999;
+	opacity:0;
+	-moz-transition: opacity 0.4s ease-in;
+	transition: opacity 0.4s ease-in;
+	pointer-events: none;
+
+   
+}
+
+.animated.bounceIn {
+    border: solid rgba(255, 7, 112, 0.2) 1px;
+    box-shadow: rgb(142, 142, 142) 0 0 20px 0px;
+}
+
+div#openDashboardModal {
+    background: none;
+
+    z-index: 999999999;
+}
+
+a.GetVipAccessButtonCLass {
+    color: white;
+    text-decoration: none;
+}
+
+.HintTextCalss {
+
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    transition: color 1s;
+}
+.HintTextCalss:hover {
+
+    color: lightgray;
+}
+
+.close {
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #000;
+    transition: background 1s;
+            background: rgba(0, 0, 0, 0.1);
+
+}
+
+.modalDashBoardDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDashBoardDialog > div {
+    overflow: scroll;
+	width: 300px;
+    height: 100%;
+    right: 0px;
+	position: fixed;
+	margin: 0 ;
+    z-index: 450;
+	padding: 5px 20px 13px 20px;
+	border-radius: 0px;
+   
+    	     color: black;
+	background: rgba(255, 255, 255, 0.8);
+    max-width: 300px;
+    display: block;
+
+    text-align: center;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    
+}
+
+
+
+
+
+
+
+/*
+.GetVipAccessButtonCLass{
+z-index: 9999999999999999999999999999;
+}
+
+
+@media screen and (max-width: 680px) {
+.GetVipAccessButtonCLass{
+z-index: 9999999999999999999999999999;
+}
+}
+*/
+
+
+
+/* Open the dashboard */
+
+@media screen and (max-width: 680px) {
+    .DashControll{
+    z-index: 9999999999999999999999999999;
+    }
+    }
+
+/** Style for the body **/
+ body {
+    font: 12px Tahoma, Arial, Helvetica, Sans-Serif;
+}
+/** Style for the button & div **/
+ .myButton {
+    padding: .2em 1em;
+    font-size: 1em;
+}
+.mySelect {
+    padding: .2em 0;
+    font-size: 1em;
+}
+#myDiv {
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+}
+#myDiv p {
+    margin: 15px;
+    font-size: 0.917em;
+}
+/** Style for the cointainer **/
+ #body {
+    clear: both;
+    margin: 0 auto;
+    max-width: 534px;
+}
+html, body {
+    background-color:White;
+}
+hr {
+    margin-bottom:40px;
+}
+

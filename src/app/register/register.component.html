@@ -1,0 +1,48 @@
+
+<div id="register" class="modalDialog">
+    <a (click)="goBack()" title="Close" class="close"></a>
+
+    <div>	
+        <!-- Logo Over here -->
+<div class="wr1Logo" id="loginLogo">
+</div>
+
+<a href="#login" class="LoginBackButtonClass" rel="noopener">
+<div class="BacktoLogin"><</div></a>
+        	<div class="LoginHeaderTitle">Create Account</div>
+
+<div ng-show="error" class="alert alert-danger">{{error}}</div>
+<!-- register form -->
+ <!-- <form name="form" [formGroup]= "form" (ngSubmit)="RegisterSubmit(form)" method="get" id="loginForm"> -->
+     <form name="form" id="loginForm" [formGroup]="form">
+
+            <!-- Add the feilds -->
+           <!-- Depricated =>  <input form="loginForm" class="ModalFormInput" id="Username" name="usernameValue" type="text" placeholder="Username*">
+            <br> <= -->
+            <!-- Full Name -->
+            <input form="loginForm" formControlName="Full_Name_Feild" class="ModalFormInput" id="FullName" name="FullNameValue" type="text" placeholder="Full Name*">
+            <br>
+            <!-- Email Varify email validity --> 
+            <input form="loginForm" formControlName="Email_Feild" class="ModalFormInput" id="Email" name="emailValue" type="text" placeholder="Email*" (keyup)="onKey($event)">
+            <br>
+            <!-- Password -->
+            <input form="loginForm" formControlName="Password_Feild" class="ModalFormInput" id="CPassword" name="CpaswordValue" type="password" placeholder="Password*">
+            <br>
+
+            <!-- Submit the registration details -->
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+
+<div class="LoginWithSocialLoginClassWrapper">
+            <button  value="Submit" class="submitButton" id="loginSubmitButtonFB"><div class="FacebookLogo"></div><div class="ButtonText" id="ButtonLoginwithFBID">Create Account with Facebook</div></button>
+
+
+
+
+    </div>
+
+<div class="forgotPasswordDivClass"><a href="#forgotPassword" class="ForgotPasswordURLLink" rel="noopener">Forgot your Password?</a></div>
+            <p class="HintTextCalss">Click anywhere to close </p>
+
+ </div>
+</div>

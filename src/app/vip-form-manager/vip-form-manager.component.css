@@ -1,0 +1,20 @@
+
+
+.card-header {
+    background-color: none!important;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+form-wizard > div > .card-header {
+    display: none;
+}
+
+h1.TitleH1 {
+    color: #ff0770;
+    width: 30vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,68 @@
+
+<div id="login" class="modalDialog" [hidden]="loginIsHidden">
+    <a (click)="goBack()" title="Close" class="close" rel="noopener"></a>
+
+    <div class="InnerLoginElement" >	
+        <!-- Logo Over here -->
+<div class="wr1Logo" id="loginLogo">
+</div>
+            <div class="LoginHeaderTitle">Sign up / Sign in</div>
+            <!-- label in charge of seckret key passage to server for quick access -->
+
+
+            <!--
+<label>SecretPass</label><input (keyup)="sendToServer()" type="text" #mySecretKey placeholder="My Secret Key"/>
+ -->
+<div ng-show="error" class="alert alert-danger">{{error}}</div>
+<!-- form starts heree-->
+        <form name="loginForm" method="get" id="loginForm" (submit)="loginUser($event)">
+<!-- Input wrapperClass aka input -->
+                <!-- Login input -->
+
+            <div class="InputWrapper">
+            <input form="loginForm" class="ModalFormInput" id="Username" name="usernameValue" type="text" placeholder="Enter your username">
+            </div>
+            <!-- password input -->
+            <div class="InputWrapper">
+            <input form="loginForm" class="ModalFormInput" id="Password" name="paswordValue" type="password" placeholder="Enter your password" >
+            </div>
+
+            <!-- Sign in input button -->
+            <div class="InputWrapper">
+            <div class="signInClass"> 
+
+            <button type="submit" form="loginForm" value="Submit" class="submitSignInButton" id="SignInSubmitButton" (submit)="CloseLoginModule()" (submit)="!hideLoggin = hideLoggin"><div class="ButtonText" id="ButtonTextSignInID" >Sign In</div></button>
+
+                </div>
+            </div>
+                     </form>
+
+<div class="LoginWithSocialLoginClassWrapper">
+            <button type="submit" form="loginForm" value="Submit" class="submitButton" id="loginSubmitButtonFB"><div class="FacebookLogo"></div><div class="ButtonText" id="ButtonLoginwithFBID">Login with Facebook</div></button>
+
+
+
+
+    </div>
+<div class="SignUpWrapperClass">
+            <button type="submit" form="loginForm" value="Submit" class="submitButton" id="loginSubmitButtonRG"><div class="ButtonText" id="ButtonTextExploreAsGuestID">Explore as a Guest</div></button>
+   
+
+<a href="#register" type="submit" form="loginForm" class="submitButton" value="Submit" id="loginSubmitButtonRG" rel="noopener" ><a href="#register"  class="MenuLoginURL submitButton" rel="noopener"><div class="ButtonText" id="ButtonTextSignUpID" >Sign Up</div></a></a>
+</div>
+<div class="forgotPasswordDivClass"><a (click)="openForgotPassword()" class="ForgotPasswordURLLink">Forgot your Password?</a></div>
+            <p class="HintTextCalss">Click anywhere to close </p>
+
+ </div>
+ <!-- Load forgot password element here -->
+
+        <div class="forgotPasswordFormWrapperClass">
+            <div class="forgotPassordFormInnerWrapperClass" [hidden]="hideResetPassword">
+        
+             <app-forgot-password-from></app-forgot-password-from>
+        
+            </div>
+        </div>
+        
+        
+</div>

@@ -1,0 +1,72 @@
+
+<app-comments-modal></app-comments-modal>
+  
+ <div class="ticketsTable" style="width: 100%;" >
+<div class="ticketslidertableRow">
+  
+  <div class="TopBorderTableRowClass">
+    
+</div>
+
+<div class="divTableBody">
+
+<div *ngFor="let ticket of tickets; let index=index; let odd=odd; let even=even;" class="ticketrow"
+      [ngClass]="{ odd: odd, even: even }">  
+      <div class="leftSideBar">
+      <div class="ticketsWrapper">   
+  <div class="singleticketWrapper"> 
+    <div class="FullDateDivClass">
+<div class="eventMonthClass">{{ticket.eventMonth}}</div>
+<div class="eventDateClass">{{ticket.eventDate}}</div>
+<div class="eventYearClass">{{ticket.eventYear}}</div>
+</div>
+    <div class="TicketsDataclass" [hidden]>     
+<div class="TicketLocationClass">{{ticket.eventLocation}}</div>
+<div class="ticketEventClass">{{ticket.eventName}}</div>
+<div class="rightSectionBox">
+<div class="callTOActionWrapperClass">
+<div class="CallToActionButtons"> 
+        <a href="#MeetNGreetURL" class="CallToActionButtonClass" rel="noopener">
+  <div class="MeetNGreetClass TicketButtonClass">{{ticket.MeetNGreet}}</div>
+  </a>
+ 
+    <a href="#BuyTicketsURL" class="CallToActionButtonClass">
+  <div class="BuyTicketsClass TicketButtonClass">{{ticket.buyTickets}}</div>
+    </a>
+     <a href="#RSVPURL" class="CallToActionButtonClass" rel="noopener" rel="noopener">
+  <div class="RSVPClass TicketButtonClass"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+{{ticket.rsvp}}</div>
+  </a>
+</div>
+</div>
+
+
+</div>
+<div class="ticketURLClass">
+  <div class="commentButtonClass">
+  <div class="commentsClass"><a href="{{ticket.ticketURL}}" target="_blank" class="ticketSiteURLClass" rel="noopener">{{ticket.ticketURL}}</a></div>
+
+<div class="commentWrapperClass" [hidden]="true">
+  <a href="#openCommentsModal" class="GetCommentsButtonClass"><div class="TicketButtonClass commentCountButton" ><i class="fa fa-commenting-o" aria-hidden="true"></i>
+{{ticket.commentCount}}</div></a>
+
+</div>
+
+
+</div>
+
+<div class="shareOnSocialButtonClass">{{tickets.getSocialSharingPOST}}</div>
+</div>
+
+<div class="BottomBorderTableRowClass">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>

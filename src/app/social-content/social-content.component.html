@@ -1,0 +1,55 @@
+
+
+
+ <div class="SocialPageInnerContainer">
+
+ <div class="divTable socialTableWrapper" >
+<div class="divTableBody">
+<div class="divTableRow">
+
+<ul class="ulListClass" id="SocialRowOne">
+<div *ngFor="let socialcontent of socialcontentsFF; let index=index; let odd1=odd; let even1=even;" class="row1"
+      [ngClass]="{ odd1: odd, even1: even }">  
+      <li class="LiClassList">
+      <div class="socialPostsWrapper">   
+  <div class="SocialPostSingleCardWrapper" [style.backgroundColor]="socialcontent.bgcolor">      
+    <a href="{{socialcontent.tweet.url}}" target="_blank" class="posterNameURLCLass"><span class="PosterNameClass"> {{socialcontent.posterName}} </span> <span class="MidDotClass">.</span> <span class="HowManyDaysAgoTweeted"> {{socialcontent.whenWasPosted}}</span></a> <br>
+    {{socialcontent.text}}
+    <br>
+    <div class="PostStatisticsClass"> 
+{{socialcontent.tweet.retweets}} retweets . {{socialcontent.tweet.favorites}} favorites     <a href="{{socialcontent.tweet.url}}" class="ViewTweetButtonClass" rel="noopener">View tweet</a> 
+  </div>
+
+</div>
+</div>
+</li>
+</div>
+</ul>
+<br>
+<ul class="ulListClass" id="SocialRowTwo">
+
+<div *ngFor="let socialcontent of socialcontentsSF; let index=index; let odd=odd2; let even=even2;" class="row2"
+      [ngClass]="{ odd: odd2, even: even2 }">  
+      <li class="LiClassList">
+      <div class="socialPostsWrapper">   
+  <div class="SocialPostSingleCardWrapper" [style.backgroundColor]="socialcontent.bgcolor">      
+    <a href="{{socialcontent.tweet.url}}" target="_blank" class="posterNameURLCLass" rel="noopener"><span class="PosterNameClass"> {{socialcontent.posterName}} </span> <span class="MidDotClass">.</span> <span class="HowManyDaysAgoTweeted"> {{socialcontent.whenWasPosted}}</span></a> <br>
+    {{socialcontent.text}}
+    <br>
+    <div class="PostStatisticsClass"> 
+{{socialcontent.tweet.retweets}} retweets . {{socialcontent.tweet.favorites}} favorites     <a href="{{socialcontent.tweet.url}}" class="ViewTweetButtonClass" >View tweet</a> 
+  </div>
+
+</div>
+</div>
+
+</li>
+</div>
+
+</ul>
+
+</div>
+
+</div>
+</div>
+</div>

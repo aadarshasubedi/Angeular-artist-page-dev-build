@@ -1,0 +1,12 @@
+<div class="DescriptionInnerCLass" *ngFor="let thisDescription of description; let i = index">
+
+  {{thisDescription.packageDescription}}
+
+  </div>
+<div class="InstructionTitle"> Sign up </div>
+<app-chosen-package-stripe-signup [@visibilityChanged]="visibility"  [hidden]="!GoBackToStepOneH"></app-chosen-package-stripe-signup>
+<app-chosen-package-stripe-signup [@visibilityChanged]="visibility"  [hidden]="GoBackToStepOneH"></app-chosen-package-stripe-signup>
+  <div class="BackToStepOneButton" (click)="GoBackToStepOne()" >
+      Back
+    </div>
+
