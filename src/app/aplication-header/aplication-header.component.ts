@@ -12,7 +12,7 @@ import 'rxjs';
 @Component({
   selector: 'app-aplication-header',
   templateUrl: './aplication-header.component.html',
-  styleUrls: ['./aplication-header.component.sass']
+  styleUrls: ['./aplication-header.component.css']
 })
 export class AplicationHeaderComponent implements OnInit {
 

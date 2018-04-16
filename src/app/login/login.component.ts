@@ -14,6 +14,10 @@ import * as clubIDG from '../club-chooser/club-chooser.component';
 import { UserService } from "app/user.service";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 
+
+/* Login page */
+/* Hndles all oath functions such as Registrtaion / login / lost password and more */
+
 // General API data
 var URL:String = "https://services-test.wr1.com/webapi/clubs";
 // Implement headers for the api aws to get data with this secret key
@@ -221,9 +225,12 @@ console.log("User is logged in? ", this.user.getUserLoggedIn());
   console.log("Outside functional auth token storage test");
   console.log(sessionStorage);
       // set admin username and credentials for testing
+
+      /* Check for admin access here */
+/* get the users token from the wr1 backend */
       if(usernameInput == 'admin' && passwordInput == 'admin' || usernameInput == 'katy@example.com' || usernameInput == 'rihanna' || usernameInput == 'geo@mail.com' || usernameInput == 'jayz' && passwordInput == '123456' ){
 
-
+ 
         //What happens after successfull login
                   this.user.setUserLoggedIn();
 
@@ -243,12 +250,12 @@ console.log("User is logged in? ", this.user.getUserLoggedIn());
         this.hideLoggin = !this.hideLoggin;
         
       } else if (usernameInput == 'user' && passwordInput == 'user' ) {
-
+ 
                      this.router.navigate(['#vip']);
         console.log ("Welcome guest user!");
 
       } else {
-            req.subscribe();
+            req.subscribe();  
             
                 console.log("Your are not authorised please try again");
 

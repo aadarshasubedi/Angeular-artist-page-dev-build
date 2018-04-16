@@ -125,6 +125,8 @@ import { ForgotPasswordFromComponent } from './forgot-password-from/forgot-passw
 import { VipJoinDirective } from './vip-join.directive';
 import { RegisterSuccessComponent } from './register-success/register-success.component';
 import { GetVipLinkFromMobileIncomingComponent } from './get-vip-link-from-mobile-incoming/get-vip-link-from-mobile-incoming.component';
+import { BuyTicketsURLPopUpComponent } from './buy-tickets-urlpop-up/buy-tickets-urlpop-up.component';
+import { InstagramImportComponent } from './instagram-import/instagram-import.component';
 
 
 
@@ -279,6 +281,10 @@ const appRoutes:Routes = [
     RegisterSuccessComponent,
   
     GetVipLinkFromMobileIncomingComponent,
+  
+    BuyTicketsURLPopUpComponent,
+  
+    InstagramImportComponent,
 
     
     

@@ -62,7 +62,7 @@
     position: relative;
      margin-left: 0vw;
      margin-right: 0vw;
-     margin-top: 3vh;
+     margin-top: 0vh;
      margin-bottom: 0vh;
     padding: 5px 20px 13px 20px;
     border: none;
@@ -92,14 +92,14 @@ Mobile
 @media screen and (max-width: 680px) {
 
 .modalVIPDialog > div {
-    width: 95%;
+    width: 98%;
     height: 40vh;
     z-index: 9999999999999999;
     position: relative;
-      margin-left: 1.5vw;
-     margin-right: 1.5vw;
-     margin-top: 5vh;
-      margin-bottom: 5vh;
+      margin-left:0vw;
+     margin-right: 0vw;
+     margin-top: 0vh;
+      margin-bottom: 0vh;
      padding-bottom: 65vw;
      border: none;
      box-shadow: none;
